@@ -1,0 +1,32 @@
+<p>
+  registration works!
+</p>
+
+{{_dataService.getUsers() | json}}
+
+
+<br/>
+
+<div class="container">
+  <h1>Registration Form</h1>
+  <form [formGroup]="rForm" (ngSubmit)="registerUser(rForm.value)" >
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" class="form-control" id="username" formControlName="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+
+    <button type="submit" class="btn btn-success">Register</button>
+
+  </form>
+</div>
+

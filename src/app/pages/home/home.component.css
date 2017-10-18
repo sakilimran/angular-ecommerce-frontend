@@ -1,0 +1,13 @@
+
+.carousel-indicators .active {
+  background-color: #34a746 !IMPORTANT;
+}
+
+.carousel-indicators li {
+  background-color: rgb(20, 120, 248) !important;
+}
+
+
+.carousel-indicators {
+  bottom: -25px !IMPORTANT;
+}

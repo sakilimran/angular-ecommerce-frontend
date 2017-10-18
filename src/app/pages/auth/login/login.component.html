@@ -1,0 +1,27 @@
+<p>
+  login works!
+</p>
+
+{{_dataService.getUsers() | json}}
+
+<button (click)="doLogin()">Login</button>
+
+
+<div class="container">
+  <h1>Login Form</h1>
+  <form [formGroup]="rForm" (ngSubmit)="doLogin(rForm.value)" >
+
+    <div class="form-group">
+      <label for="username">Username/Email</label>
+      <input type="text" class="form-control" id="username" formControlName="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+
+    <button type="submit" class="btn btn-success">Login</button>
+
+  </form>
+</div>
